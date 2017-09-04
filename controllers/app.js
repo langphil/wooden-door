@@ -1,5 +1,5 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
 someKey = {};
 
@@ -9,12 +9,12 @@ app.get('/', (req, res) => {
 
 app.get('/set', (req, res) => {
   res.send();
-  someKey = req.query.somekey
+  someKey = req.query.somekey;
 });
 
 app.get('/get', (req, res) => {
-  let route = req.url == '/get?key=somekey' ? 'key: ' + someKey : ''
+  let route = req.url == '/get?key=somekey' ? 'key: ' + someKey : '';
   res.send(route);
 });
 
-module.exports = app
+module.exports = app;

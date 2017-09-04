@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest", "stop": "pkill --signal SIGINT myApp"
   },
   "dependencies": {
     "express": "^4.15.4"
