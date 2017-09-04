@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-someKey = {};
+someKey = '';
 
 app.get('/', (req, res) => {
   res.send();
