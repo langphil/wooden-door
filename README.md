@@ -8,7 +8,6 @@ A lightweight server
 * npm install --save-dev babel-cli babel-preset-env jest supertest superagent express
 
 ## Run server
-* cd controllers
 * node server.js
 * visit 'localhost://4000'
 
