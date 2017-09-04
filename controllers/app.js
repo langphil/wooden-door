@@ -4,17 +4,17 @@ const app = express()
 someKey = {};
 
 app.get('/', (req, res) => {
-  res.status(200).send();
+  res.send();
 });
 
 app.get('/set', (req, res) => {
-  res.status(200).send();
+  res.send();
   someKey = req.query.somekey
-  console.log(someKey);
 });
 
 app.get('/get', (req, res) => {
-  res.status(200).send();
+  let route = req.url == '/get?key=somekey' ? 'key: ' + someKey : ''
+  res.send(route);
 });
 
 module.exports = app
